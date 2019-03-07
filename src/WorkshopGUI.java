@@ -8,7 +8,7 @@ import javax.swing.*;
 public class WorkshopGUI {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Naucz się programowania");
-        // ----------------------------------------------------
+        //UTWORZENIE I USTAWIENIE OBIEKTÓW---------------------
         JLabel lblName = new JLabel("Imię i nazwisko");
         lblName.setBounds(20, 20, 150, 20);
         JTextField tfName = new JTextField();
@@ -20,7 +20,10 @@ public class WorkshopGUI {
         tfEmail.setBounds(20,110, 150, 20);
         // ----------------------------------------------------
 
-
+        //DODAWANIE OBIEKTÓW DO OKNA----------------------------
+        frame.add(lblName); frame.add(lblEmail);
+        frame.add(tfName); frame.add(tfEmail);
+        // ----------------------------------------------------
         frame.setSize(300,300);
         frame.setLayout(null);
         frame.setVisible(true);
