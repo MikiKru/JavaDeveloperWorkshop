@@ -30,13 +30,22 @@ public class WorkshopGUI {
         ButtonGroup bgGender = new ButtonGroup();
         bgGender.add(rbFemale);
         bgGender.add(rbMale);
+        // WARTOSC DOMYSLNA-------------------------------------
+        rbFemale.setSelected(true);
+        // PRZYCISKI -------------------------------------------
+        JButton btnSubmit = new JButton("Zapisz");
+        btnSubmit.setBounds(20, 230,100, 20);
+        JButton btnExit = new JButton("Wyjdź");
+        btnExit.setBounds(150, 230, 100, 20);
+
 
         //DODAWANIE OBIEKTÓW DO OKNA----------------------------
         frame.add(lblName); frame.add(lblEmail); frame.add(lblGender);
         frame.add(tfName); frame.add(tfEmail);
         frame.add(rbFemale); frame.add(rbMale);
+        frame.add(btnExit); frame.add(btnSubmit);
         // ----------------------------------------------------
-        frame.setSize(300,300);
+        frame.setSize(300,350);
         frame.setLayout(null);
         frame.setVisible(true);
     }
