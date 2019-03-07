@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 // https://github.com/MikiKru/JavaDeveloperWorkshop
 
 // psvm -> public static void main(){}
@@ -37,8 +39,20 @@ public class WorkshopGUI {
         btnSubmit.setBounds(20, 230,100, 20);
         JButton btnExit = new JButton("Wyjdź");
         btnExit.setBounds(150, 230, 100, 20);
+        // OBSŁUGA ZDARZEN--------------------------------------
+        btnSubmit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
 
+            }
+        });
+        // -----------------------------------------------------
+        btnExit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
 
+            }
+        });
         //DODAWANIE OBIEKTÓW DO OKNA----------------------------
         frame.add(lblName); frame.add(lblEmail); frame.add(lblGender);
         frame.add(tfName); frame.add(tfEmail);
