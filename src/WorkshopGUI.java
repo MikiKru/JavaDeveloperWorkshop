@@ -19,10 +19,22 @@ public class WorkshopGUI {
         JTextField tfEmail = new JTextField();
         tfEmail.setBounds(20,110, 150, 20);
         // ----------------------------------------------------
+        JLabel lblGender = new JLabel("Płeć");
+        lblGender.setBounds(20, 140, 150, 20);
+        // POLA WYOBRU-----------------------------------------
+        JRadioButton rbFemale = new JRadioButton("kobieta");
+        rbFemale.setBounds(20, 170, 150, 20);
+        JRadioButton rbMale = new JRadioButton("meżczyzna");
+        rbMale.setBounds(20, 200, 150, 20);
+        // Agregacja obiektów RB -------------------------------
+        ButtonGroup bgGender = new ButtonGroup();
+        bgGender.add(rbFemale);
+        bgGender.add(rbMale);
 
         //DODAWANIE OBIEKTÓW DO OKNA----------------------------
-        frame.add(lblName); frame.add(lblEmail);
+        frame.add(lblName); frame.add(lblEmail); frame.add(lblGender);
         frame.add(tfName); frame.add(tfEmail);
+        frame.add(rbFemale); frame.add(rbMale);
         // ----------------------------------------------------
         frame.setSize(300,300);
         frame.setLayout(null);
