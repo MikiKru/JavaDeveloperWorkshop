@@ -43,14 +43,25 @@ public class WorkshopGUI {
         btnSubmit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                // sout -> System.out.println();
+                System.out.println("ZAPISANO UCZESTNIKA");
+                String name = tfName.getText();
+                String email = tfEmail.getText();
+                //--------------------------------------
+                String gender = "kobieta";
+                if(rbMale.isSelected()){
+                    gender = "meżczyzna";
+                }
+                System.out.println("Imię i nazwisko: " + name);
+                System.out.println("Email: " + email);
+                System.out.println("Płeć: " + gender);
             }
         });
         // -----------------------------------------------------
         btnExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                System.exit(0);
             }
         });
         //DODAWANIE OBIEKTÓW DO OKNA----------------------------
